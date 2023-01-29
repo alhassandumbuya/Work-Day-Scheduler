@@ -1,3 +1,9 @@
 * Display the current day at the top of the calender when a user opens the planner.
  - first step is to add the link of moment.js to the html file
  - copy the date preference from moments.js and add it to the present day function 
+
+ * Present timeblocks for standard business hours when the user scrolls down.
+   - find the right grid size of bootstrap 
+   - copy the code and add it to the html, make adjustment on colum sizes and discriptions
+   - set the column width in possitions so that the wider(middle) will be the largest
+   
