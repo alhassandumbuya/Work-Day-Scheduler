@@ -8,3 +8,6 @@
    - set the column width in possitions so that the wider(middle) will be the largest
    - on the last col, replace the save div with a button elemnt and target it on the css
    - change the col-10 dive into text area to allow user input 
+
+   * Capturing and saving user input 
+    - need to run a function that will save the user input.
