@@ -14,18 +14,21 @@ let $timeBlockContainerEl = $(".container");
 for (let i = 0; i < dayHours.length; i++) {
     console.log(dayHours);
     $timeBlockContainerEl.append(
-        <div class="row time-block">
-        <div class="col-md-1 hour">
-
+       ` 
+       <div class="row time-block">
+        <div class="col-md-1 hour">${dayHours[i]}${i >= 3 ? "PM" : "AM"}
         </div>
-        <textarea class="col-md-10 description future">
+        <textarea class="col-md-10 description">
         </textarea>
-        <button class="col-md-1 saveBtn i:hover">
+        <button class="col-md-1 saveBtn">
           Save
         </button>
       </div>
+     ` 
     )
-
+    
+    
+  
 
     
 }
