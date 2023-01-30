@@ -25,8 +25,11 @@ for (let i = 0; i < dayHours.length; i++) {
         </button>
       </div>
      ` 
-    )
-    
+     //  var text = $(this).siblings(".description").val();
+     //  var time = $(this).parent().attr("id");
+     )
+     localStorage.setItem(`${dayHours[i]}${i >= 3 ? "PM" : "AM"}`, $("textarea").val()) //saves the dayhours into the local storage
+     
     
   
 
