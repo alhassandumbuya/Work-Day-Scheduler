@@ -3,10 +3,12 @@ let presentDay = $('#currentDay').html(moment().format('MMMM Do YYYY, h:mm:ss a'
 
 $(document).ready(function() {
 
-    $(".saveBtn").on("click", function (event) {
+    $(".button").on("click", function (event) {
+        if (event.target.matches(".button")) {
+            let taskDescription=$(event.target).siblings("textarea").val() //targeting the save button
+            localStorage.setItem(`${(event.target).attr("data-hour")}`,taskDescription) //should save the string(key/tome/hour) and the value(discription)
+        }
         console.log(event.target);
-        let taskDescription=$(event.target).siblings("textarea").val() //targeting the save button
-        localStorage.setItem(`${(event.target).attr("data-hour")}`,taskDescription) //should save the string(key/tome/hour) and the value(discription)
         // let scheduale = $('.col-md-10').val();
         // localStorage.setItem("plan", scheduale);
         // console.log(scheduale);
