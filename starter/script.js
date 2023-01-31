@@ -49,9 +49,9 @@ for (let i = 0; i < dayHours.length; i++) {
 }
 
 $('.saveBtn').click(()=>{
-   let text = $('.description').val();
-    //var text = $(this).siblings(".description").val();
-    let Hday = dayHours
+   let text = $('.description').val(); //this colleccts the user inputs when save is clicked 
+    
+    let Hday = $('.hour').val();
     console.log(text);
     console.log(Hday);
  });
